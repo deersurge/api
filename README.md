@@ -1,2 +1,4 @@
 # api
-https://api.deersurge.io
+
+url: https://api.deersurge.io
+sandbox: https://deersurge-api.herokuapp.com/
