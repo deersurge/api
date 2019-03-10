@@ -6,6 +6,3 @@
 $ npm i
 $ npm run dev
 ```
-
-### Deploy to Heroku
-docs is [here](https://github.com/deersurge/deersurge-api"#deploy-server-to-heroku)

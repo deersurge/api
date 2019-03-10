@@ -2,7 +2,7 @@
   "name": "deersurge-api",
   "version": "0.0.1",
   "description": "deersurge Node API",
-  "main": "index.js",
+  "main": "server/dist/server.js",
   "scripts": {
     "test": "eslint --fix src/",
     "precommit": "npm test",
