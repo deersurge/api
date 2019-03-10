@@ -70,7 +70,7 @@ exports.default = {
             if (existingUser) {
                 existingUser.comparedPassword(password, function (err, good) {
                     if (err || !good) {
-                        return res.status(401).send(err || 'User not found');
+                        return res.status(401).send(err || 'Password incorrect');
                     }
 
                     res.send({
@@ -78,7 +78,7 @@ exports.default = {
                     });
                 });
             }
-        });
+        }).populate('-email');
     },
 
     updateProfile: function updateProfile(req, res, next) {

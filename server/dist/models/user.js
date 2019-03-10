@@ -29,7 +29,10 @@ var userSchema = new _mongoose2.default.Schema({
         type: Boolean,
         default: false
     },
-    password: String,
+    password: {
+        type: String,
+        populate: false
+    },
     phone: {
         number: {
             type: String
