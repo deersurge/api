@@ -1,9 +1,13 @@
 import Authentication from '../controllers/authentication';
+import docs from './docs'
 
 const router = require('express').Router();
 
 router.get('/', (req, res)=>{
-    res.send('connected');
+    res.send({
+        status: 'API connected',
+        docs
+    });
 })
 
 router.get('/userProfile', (req, res)=>{

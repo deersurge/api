@@ -35,7 +35,7 @@ export default {
                     }
     
                     res.json({
-                        success: true,
+                        success: 'signup',
                         token: token.generateToken(savedUser)
                     })
                 })
@@ -64,11 +64,12 @@ export default {
                             }
     
                             res.send({
+                                success: 'signin',
                                 token: token.generateToken(existingUser)
                             })
                     })
                 }
-            }).populate('-email')
+            }).select('password')
     },
 
     updateProfile: (req, res, next) => {

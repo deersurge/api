@@ -16,10 +16,9 @@ export default {
                   error: 'middleware User not found!!!'
               });
           }
-          delete user.password;
           req.user = user;
           next();
-        })
+        });
     })
   }
 }
